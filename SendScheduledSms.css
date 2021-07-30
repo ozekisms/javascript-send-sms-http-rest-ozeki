@@ -1,0 +1,45 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 80vw;
+    margin-left: 10vw;
+    top:5vh;
+    height: 40vh;
+    justify-content: space-evenly;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+}
+
+.log-container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 80vw;
+    margin-left: 10vw;
+    bottom: 5vh;
+    height: 40vh;
+}
+
+.log {
+    height: 100%;
+    overflow-y: scroll;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
