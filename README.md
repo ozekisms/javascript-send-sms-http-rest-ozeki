@@ -3,8 +3,8 @@
 
 ### How to use the Ozeki.Libs.Rest library
 
-In order to use the __Ozeki.Libs.Rest library__ in your own project, you need to place the __Ozeki.Libs.Rest.h__ and the __Ozeki.Libs.Rest.m__ files in your project.
-After you've placed these two files _(what you can download from this github repository, together with 5 example projects)_, you can import it with this line:
+In order to use the __Ozeki.Libs.Rest library__ in your own project, you need to place the __Ozeki.Libs.Rest.js__ file in your project.
+After you've placed this file _(what you can download from this github repository, together with 5 example projects)_, you can import its components with this line:
 
 ```javascript
 import { Configuration, Message, MessageApi } from 'Ozeki.Libs.Rest.js';
