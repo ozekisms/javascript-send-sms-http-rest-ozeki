@@ -1,5 +1,3 @@
-//This is what happens when the repository gets updated.
-
 export class Configuration {
     constructor () {
         this.Username = null;
