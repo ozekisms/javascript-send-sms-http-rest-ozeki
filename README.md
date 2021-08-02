@@ -77,7 +77,7 @@ After you have done all the steps, you check the Ozeki SMS Gateway and you will 
 ## Manual / API reference
 To get a better understanding of the above **SMS code sample**, it is a good idea to visit the webpage that explains this code in a more detailed way. You can find videos, explanations and downloadable content on this URL.
 
-Link: [How to send sms from Javascript](https://ozeki-sms-gateway.com/p_831-c-sharp-send-sms-with-the-http-rest-api-code-sample.html)
+Link: [How to send sms from Javascript](https://ozeki-sms-gateway.com/p_837-javascript-send-sms-with-the-http-rest-api-code-sample.html)
 
 ## How to send sms through your Android mobile phone
 
