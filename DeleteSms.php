@@ -12,7 +12,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Send SMS with Ozeki SMS Gateway</title>
+        <title>Delete SMS with Ozeki SMS Gateway</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="DeleteSms.css">
     </head>
@@ -48,7 +48,7 @@
             var configuration = new Configuration();
             configuration.Username = 'http_user';
             configuration.Password = 'qwe123';
-            configuration.ApiUrl = 'http://127.0.0.1:5000/api';
+            configuration.ApiUrl = 'http://127.0.0.1:9509/api';
 
             var api = new MessageApi(configuration);
 
@@ -74,6 +74,9 @@
                     }
 
                     let result = await api.Delete(folder, msg);
+
+                    document.getElementById('ID').value = '';
+                    document.getElementById('folder').value = 'inbox';
 
                     document.getElementById('container').innerHTML += `<li class="list-group-item">${result}</li>`;
                 }

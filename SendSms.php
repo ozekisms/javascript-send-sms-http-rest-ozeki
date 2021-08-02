@@ -53,6 +53,9 @@
 
                 let result = await api.Send(msg);
 
+                document.getElementById("ToAddress").value = '';
+                document.getElementById("Text").value = '';
+
                 document.getElementById('log-container').innerHTML += `<li class="list-group-item">${result}</li>`;
             });
         </script>

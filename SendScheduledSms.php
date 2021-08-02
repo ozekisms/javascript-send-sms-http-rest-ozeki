@@ -12,7 +12,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Send SMS with Ozeki SMS Gateway</title>
+        <title>Send Scheduled SMS with Ozeki SMS Gateway</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="SendScheduledSms.css">
     </head>
@@ -63,6 +63,10 @@
                      date[2], time[0], time[1], time[2]));
 
                     let result = await api.Send(msg);
+
+                    document.getElementById("ToAddress").value = '';
+                    document.getElementById("Text").value = '';
+                    document.getElementById('TimeToSend').value = '';
 
                     document.getElementById('container').innerHTML += `<li class="list-group-item">${result}</li>`;
                 }
